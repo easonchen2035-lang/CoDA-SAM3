@@ -1,0 +1,9 @@
+gate(0.3)[vote:TM1|vote=a|lam=0][vote:M1|vote=a|lam=0]
+gate(0.3)[vote:TM1|vote=a|lam=0.5][vote:M1|vote=a|lam=0.5]
+gate(0.5)[vote:TM1|vote=a|lam=0][vote:M1|vote=a|lam=0]
+gate(0.5)[vote:TM1|vote=a|lam=0.5][vote:M1|vote=a|lam=0.5]
+gate(0.7)[vote:TM1|vote=a|lam=0][vote:M1|vote=a|lam=0]
+gate(0.7)[vote:TM1|vote=a|lam=0.5][vote:M1|vote=a|lam=0.5]
+vote:M1|vote=a|lam=0.5
+vote:TM1|vote=a|lam=0.5
+src:T|lam=1

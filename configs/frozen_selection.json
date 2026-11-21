@@ -1,0 +1,142 @@
+{
+ "rule": "global spec = argmax mean over 4 datasets of val (AP50_box+mIoU@tau*)/2 among final-family specs (mosaic retrieval K=3); tau per dataset from val",
+ "coda_spec": "jvote:M1+TM1|vote=a|lam=1",
+ "tau": {
+  "kvasir": "0.3",
+  "isic2018": "0.4",
+  "nwpu": "0.6",
+  "isaid": "0.5"
+ },
+ "val": {
+  "kvasir": {
+   "tau": "0.3",
+   "seeds": [
+    0
+   ],
+   "ap50_box": [
+    0.916935449187226
+   ],
+   "ap50_mask": [
+    0.9333873700208417
+   ],
+   "mIoU": [
+    0.8018965018588702
+   ],
+   "mDice": [
+    0.8623257273950758
+   ],
+   "sel": 0.8594159755230482
+  },
+  "isic2018": {
+   "tau": "0.4",
+   "seeds": [
+    0
+   ],
+   "ap50_box": [
+    0.9837245519192438
+   ],
+   "ap50_mask": [
+    0.9837245519192438
+   ],
+   "mIoU": [
+    0.8167274386075346
+   ],
+   "mDice": [
+    0.8868454288465039
+   ],
+   "sel": 0.9002259952633892
+  },
+  "nwpu": {
+   "tau": "0.6",
+   "seeds": [
+    0
+   ],
+   "ap50_box": [
+    0.7887496252158426
+   ],
+   "ap50_mask": [
+    0.732744735386399
+   ],
+   "mIoU": [
+    0.56501061083284
+   ],
+   "mDice": [
+    0.6901221020956049
+   ],
+   "sel": 0.6768801180243413
+  },
+  "isaid": {
+   "tau": "0.5",
+   "seeds": [
+    0
+   ],
+   "ap50_box": [
+    0.406214104577809
+   ],
+   "ap50_mask": [
+    0.34361656500445587
+   ],
+   "mIoU": [
+    0.3631943324180797
+   ],
+   "mDice": [
+    0.49240409364993
+   ],
+   "sel": 0.38470421849794434
+  }
+ },
+ "ranking": [
+  [
+   "jvote:M1+TM1|vote=a|lam=1",
+   0.7053065768271807
+  ],
+  [
+   "jvote:M1+TM1|vote=a|lam=0.5",
+   0.7028288509095424
+  ],
+  [
+   "jvote:M1+TM1|vote=a|lam=0",
+   0.6973347111201184
+  ],
+  [
+   "vote:TM1|vote=a|lam=0.5",
+   0.6866717872215082
+  ],
+  [
+   "gate(0.3)[vote:TM1|vote=a|lam=0.5][vote:M1|vote=a|lam=0.5]",
+   0.685139624083232
+  ],
+  [
+   "vote:M1|vote=a|lam=0.5",
+   0.684230178268711
+  ],
+  [
+   "gate(0.5)[vote:TM1|vote=a|lam=0.5][vote:M1|vote=a|lam=0.5]",
+   0.6828353166566794
+  ],
+  [
+   "gate(0.7)[vote:TM1|vote=a|lam=0.5][vote:M1|vote=a|lam=0.5]",
+   0.675034285474511
+  ],
+  [
+   "gate(0.3)[vote:TM1|vote=a|lam=0][vote:M1|vote=a|lam=0]",
+   0.672646389775148
+  ],
+  [
+   "gate(0.5)[vote:TM1|vote=a|lam=0][vote:M1|vote=a|lam=0]",
+   0.6717661300813067
+  ],
+  [
+   "gate(0.7)[vote:TM1|vote=a|lam=0][vote:M1|vote=a|lam=0]",
+   0.6654290623428905
+  ],
+  [
+   "jvote:M1+TM1|vote=a|lam=0.5|extra=T",
+   0.6560294653998759
+  ],
+  [
+   "src:T|lam=1",
+   0.48347910684580997
+  ]
+ ]
+}

@@ -1,0 +1,4 @@
+src:T|lam=1
+vote:M1|vote=a|lam=0
+vote:M1|vote=a|lam=0|mv=1
+vote:M1|vote=a|lam=1|extra=T

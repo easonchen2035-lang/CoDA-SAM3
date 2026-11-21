@@ -1,0 +1,4 @@
+jvote:M1+TM1|vote=a|lam=0
+jvote:M1+TM1|vote=a|lam=0.5
+jvote:M1+TM1|vote=a|lam=1
+jvote:M1+TM1|vote=a|lam=0.5|extra=T

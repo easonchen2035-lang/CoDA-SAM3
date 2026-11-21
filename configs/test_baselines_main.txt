@@ -1,0 +1,8 @@
+src:T
+src:E
+src:TE
+src:G
+src:TG
+fm
+vote:E1|vote=a|lam=0|mv=1
+vote:TE1|vote=u|lam=1|extra=T

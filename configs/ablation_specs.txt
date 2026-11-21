@@ -1,0 +1,12 @@
+# component ablations of the frozen method (retr K=3, test); tau = frozen per-dataset val tau
+jvote:M1+TM1|vote=a|lam=1
+jvote:M1+TM1|vote=a|lam=0
+jvote:M1+TM1|vote=a|lam=0.5
+jvote:M1+TM1|vote=u|lam=1
+jvote:M1+TM1|vote=a|lam=1|mv=1
+pool:M1+TM1|lam=1
+pool:M1+TM1|lam=0
+top1:M1+TM1|lam=1
+top1:M1|lam=1
+vote:M1|vote=a|lam=1
+vote:TM1|vote=a|lam=1
